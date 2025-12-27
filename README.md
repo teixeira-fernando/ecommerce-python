@@ -1,6 +1,6 @@
 # Ecommerce Python Application
 
-This is a practice ecommerce application built in Python to help you learn and experiment with Python project structure, testing, and packaging.
+This is a practice ecommerce application built in Python to learn and experiment with Python project structure, testing, and packaging.
 
 ## Features
 - Modular folder structure (products, users, orders, cart, payments)

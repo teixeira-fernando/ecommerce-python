@@ -1,5 +1,5 @@
-from src.ecommerce.app.cart import Cart
-from src.ecommerce.app.products import Product
+from ecommerce.app.cart import Cart
+from ecommerce.app.products import Product
 
 def test_cart_add():
     cart = Cart()

@@ -1,7 +1,7 @@
-from src.ecommerce.app.payments import Payment
-from src.ecommerce.app.orders import Order
-from src.ecommerce.app.users import User
-from src.ecommerce.app.products import Product
+from ecommerce.app.payments import Payment
+from ecommerce.app.orders import Order
+from ecommerce.app.users import User
+from ecommerce.app.products import Product
 
 def test_payment_creation():
     user = User("eve")

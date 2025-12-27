@@ -1,4 +1,4 @@
-from src.ecommerce.app.users import User
+from ecommerce.app.users import User
 
 def test_user_creation():
     u = User("alice")

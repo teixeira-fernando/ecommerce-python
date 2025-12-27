@@ -1,6 +1,6 @@
-from src.ecommerce.app.orders import Order
-from src.ecommerce.app.users import User
-from src.ecommerce.app.products import Product
+from ecommerce.app.orders import Order
+from ecommerce.app.users import User
+from ecommerce.app.products import Product
 
 def test_order_creation():
     user = User("bob")

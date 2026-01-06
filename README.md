@@ -15,10 +15,22 @@ This is a practice ecommerce application built in Python to learn and experiment
 - Poetry
 - Docker (optional)
 
+### Tech stack
+
+- FastAPI
+- Poetry
+- PostgresSQL
+
 ### Install dependencies
 ```
 poetry install
 ```
+
+### Run dependencies (database)
+```
+docker compose up -d
+```
+
 
 ### Run tests
 ```
@@ -44,4 +56,4 @@ src/ecommerce/app/orders/     # Order logic
 src/ecommerce/app/cart/       # Cart logic
 src/ecommerce/app/payments/   # Payment logic
 tests/                        # Unit tests
-``
+```

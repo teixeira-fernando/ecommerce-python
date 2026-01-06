@@ -1,11 +1,5 @@
-from ecommerce.app.products import Product
-from ecommerce.app.users import User
-from ecommerce.app.orders import Order
-from ecommerce.app.cart import Cart
-from ecommerce.app.payments import Payment
-
-def main():
-    print("Ecommerce app is running. Replace this with your app logic.")
+import uvicorn
+from ecommerce.app.api.main import app
 
 if __name__ == "__main__":
-    main()
+    uvicorn.run(app, host="0.0.0.0", port=8000)

@@ -14,9 +14,9 @@ class OrderResponse(BaseModel):
     products: list[str]
 
 @router.post("/orders", response_model=OrderResponse)
-def create_order(order_req: OrderRequest):
+async def create_order(order_req: OrderRequest):
     service = OrderService()
-    order = service.create_order(order_req.user, order_req.products)
+    order = await service.create_order(order_req.user, order_req.products)
     if not order:
         raise HTTPException(status_code=400, detail="Order creation failed")
-    return OrderResponse(id=order.id, user=order.user, products=order.products)
+    return OrderResponse(id=order["id"], user=order["user"], products=order["products"])

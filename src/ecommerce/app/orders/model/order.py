@@ -1,9 +1,9 @@
-class Order:
-    def __init__(self, user, products):
-        self.user = user
-        self.products = products
-        self.id = None
+from sqlalchemy import Column, Integer, String, JSON
+from ecommerce.app.db import Base
 
-    def save(self):
-        self.id = 1
-        return self
+class Order(Base):
+    __tablename__ = "orders"
+
+    id = Column(Integer, primary_key=True, index=True)
+    user = Column(String, nullable=False)
+    products = Column(JSON, nullable=False)
